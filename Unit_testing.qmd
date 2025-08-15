@@ -48,8 +48,8 @@ expect_length(mean_range(mtcars), 2)
 expect_true(mean_range(mtcars)[1] < mean_range(mtcars)[2])
 
 
-expect_type(mean_range(mtcars), 32
+#expect_type(mean_range(mtcars), 32
 
-expect_equal(mean_range(mtcars), )
+#expect_equal(mean_range(mtcars), )
 ```
 
