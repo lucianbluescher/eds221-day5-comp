@@ -39,7 +39,7 @@ mean_range <- function(df){
 mean_range(df = mtcars)
 ```
 
-Write some unit tests!
+## Write some unit tests!
 ```{r}
 # Test that the output is of length 2
 #| include: false
@@ -51,5 +51,24 @@ expect_true(mean_range(mtcars)[1] < mean_range(mtcars)[2])
 #expect_type(mean_range(mtcars), 32
 
 #expect_equal(mean_range(mtcars), )
+```
+## Practice Sourcing funtions
+
+Custom function example
+```{r}
+source(here::here("src", "food_cart_functions.R"))
+
+# Test running function
+name_cart(food = "strawberry", animal = "marmot")
+
+```
+
+Practice with an existing function
+```{r}
+# Source cork oak function
+source(here::here("src", "cork_oak_growth.R"))
+
+# Call function
+height_t2(3, 1, 5)
 ```
 
